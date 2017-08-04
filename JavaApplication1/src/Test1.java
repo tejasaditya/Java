@@ -22,7 +22,11 @@ public class Test1
         //or
         //char c = sc.next().charAt(0);
         
-        if()
+      //  if(ch = "a")
+       // {
+       //     System.out.println("Vowel");
+       // }
+       // else
     }
             
             
