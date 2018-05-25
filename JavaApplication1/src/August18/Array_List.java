@@ -22,6 +22,10 @@ public class Array_List
         al.add(5,"JKL");
         //al.add(3,new Student(roll+" "+name));
         al.add("");
+        for(int i =0; i<al.size();i++)
+        {
+            System.out.println(al.get(i));
+        }
         
     }
     

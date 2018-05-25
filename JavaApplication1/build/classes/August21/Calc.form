@@ -85,7 +85,7 @@
                   <Component id="jButton3" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
                   <Component id="jButton4" min="-2" pref="64" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="79" max="32767" attributes="0"/>
+              <EmptySpace pref="65" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="t3" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                   <Component id="jLabel3" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
@@ -98,11 +98,14 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="cc" red="ff" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Handwriting" size="14" style="3"/>
+          <Font name="Tempus Sans ITC" size="14" style="3"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="cc" type="rgb"/>
+          <Color blue="ff" green="66" red="33" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="ENTER FIRST NUMBER"/>
       </Properties>
@@ -111,11 +114,14 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="cc" red="ff" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Handwriting" size="14" style="3"/>
+          <Font name="Tempus Sans ITC" size="14" style="3"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="cc" type="rgb"/>
+          <Color blue="ff" green="66" red="33" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="ENTER SECOND NUMBER"/>
       </Properties>
@@ -131,7 +137,7 @@
           <Font name="Lucida Handwriting" size="14" style="3"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="0" red="cc" type="rgb"/>
+          <Color blue="dc" green="2e" red="70" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="RESULT"/>
       </Properties>
@@ -141,23 +147,29 @@
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Handwriting" size="36" style="3"/>
+          <Font name="Calibri" size="36" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="+"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Handwriting" size="36" style="3"/>
+          <Font name="Calibri Light" size="36" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Handwriting" size="36" style="3"/>
+          <Font name="Calibri Light" size="36" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="*"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -171,7 +183,7 @@
     <Component class="javax.swing.JButton" name="jButton4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Handwriting" size="36" style="3"/>
+          <Font name="Calibri Light" size="36" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="/"/>
       </Properties>
@@ -182,7 +194,7 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Engravers MT" size="14" style="1"/>
+          <Font name="Gadugi" size="24" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Calculator"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>

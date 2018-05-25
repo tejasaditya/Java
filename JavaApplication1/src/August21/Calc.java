@@ -13,8 +13,12 @@ public class Calc extends javax.swing.JFrame {
     /**
      * Creates new form Calc
      */
+    
     public Calc() {
         initComponents();
+       
+        
+        
     }
 
     /**
@@ -40,12 +44,14 @@ public class Calc extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Lucida Handwriting", 3, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(204, 0, 102));
+        jLabel1.setBackground(new java.awt.Color(255, 204, 102));
+        jLabel1.setFont(new java.awt.Font("Tempus Sans ITC", 3, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(51, 102, 255));
         jLabel1.setText("ENTER FIRST NUMBER");
 
-        jLabel2.setFont(new java.awt.Font("Lucida Handwriting", 3, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 0, 102));
+        jLabel2.setBackground(new java.awt.Color(255, 204, 102));
+        jLabel2.setFont(new java.awt.Font("Tempus Sans ITC", 3, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 102, 255));
         jLabel2.setText("ENTER SECOND NUMBER");
 
         t2.addActionListener(new java.awt.event.ActionListener() {
@@ -55,16 +61,26 @@ public class Calc extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Lucida Handwriting", 3, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(204, 0, 102));
+        jLabel3.setForeground(new java.awt.Color(112, 46, 220));
         jLabel3.setText("RESULT");
 
-        jButton1.setFont(new java.awt.Font("Lucida Handwriting", 3, 36)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Calibri", 3, 36)); // NOI18N
         jButton1.setText("+");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setFont(new java.awt.Font("Lucida Handwriting", 3, 36)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Calibri Light", 3, 36)); // NOI18N
         jButton2.setText("-");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
-        jButton3.setFont(new java.awt.Font("Lucida Handwriting", 3, 36)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Calibri Light", 3, 36)); // NOI18N
         jButton3.setText("*");
         jButton3.setToolTipText("");
         jButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -75,7 +91,7 @@ public class Calc extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Lucida Handwriting", 3, 36)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Calibri Light", 3, 36)); // NOI18N
         jButton4.setText("/");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,7 +99,7 @@ public class Calc extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Engravers MT", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Gadugi", 1, 24)); // NOI18N
         jLabel4.setText("Calculator");
         jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
@@ -140,7 +156,7 @@ public class Calc extends javax.swing.JFrame {
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(t3, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -155,12 +171,33 @@ public class Calc extends javax.swing.JFrame {
     }//GEN-LAST:event_t2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        int n1 = Integer.parseInt(t1.getText());
+        int n2 = Integer.parseInt(t2.getText());
+        int n3 = n1 / n2;
+        t3.setText(n3+"");
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        int n1 = Integer.parseInt(t1.getText());
+        int n2 = Integer.parseInt(t2.getText());
+        int n3 = n1 * n2;
+        t3.setText(n3+"");
+
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        int n1 = Integer.parseInt(t1.getText());
+        int n2 = Integer.parseInt(t2.getText());
+        int n3 = n1 + n2;
+            t3.setText(n3+"");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        int n1 = Integer.parseInt(t1.getText());
+        int n2 = Integer.parseInt(t2.getText());
+        int n3 = n1 - n2;
+        t3.setText(n3+"");
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -190,6 +227,7 @@ public class Calc extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Calc().setVisible(true);
